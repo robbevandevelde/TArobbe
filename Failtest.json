@@ -1,0 +1,19 @@
+{
+  "type": "NFA",
+  "alphabet": [
+    "0",
+    "Q"
+  ],
+  "states": [
+    {
+      "name": "44343",
+      "starting": yes,
+      "accepting": false
+    },
+    {
+      "name": "Q1",
+      "starting": false,
+      "accepting": true
+    }
+  ]
+}
