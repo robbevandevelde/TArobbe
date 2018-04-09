@@ -5,6 +5,7 @@
 #ifndef SSC_STATE_H
 #define SSC_STATE_H
 #include <string>
+#include <vector>
 using namespace std;
 
 class State {
@@ -38,6 +39,10 @@ public:
 
     void setName(const string &name) {
         State::name = name;
+    }
+
+    bool inStates(State state) {
+        return false;
     }
 };
 

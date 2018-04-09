@@ -18,14 +18,20 @@ NFA::NFA(string &NFAjson) {
         string naamState = states.(states[i]["name"].asString());
         bool startingState = states.(states[i]["starting"].asBool());
         bool acceptingState = states.(states[i]["accepting"].asBool());
-        new State(naamState, startingState, acceptingState);
+        State* State = new State(naamState, startingState, acceptingState);
+        NFAstates.push_back(State);
     }
 
     const Json::Value& transitions = obj["transitions"];
     for (int i = 0; i < transitions.size(); i++) {
-        State* from = transitions.(transitions[i]["from"]);
-        State* to = transitions.(transitions[i]["to"]);
+        string from = transitions.(transitions[i]["from"]);
+        string to = transitions.(transitions[i]["to"]);
         string input = transitions.(transitions[i]["input"].asString());
-        new Transition(from, to, input);
+        State*
+        //new Transition(from, to, input);
     }
+}
+
+void NFA::SSC() {
+
 }

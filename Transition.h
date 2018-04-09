@@ -13,7 +13,6 @@ private:
     State* from;
     State* to;
     string input;
-    vector<Transition*> transitions;
 public:
     Transition(State* from1, State* to1, string& label){from= from1, to= to1, input= label;};
     bool isLegit(State* from, State* to);

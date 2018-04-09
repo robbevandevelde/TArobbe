@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SSC.dir/main.cpp.o"
-  "CMakeFiles/SSC.dir/NFA.cpp.o"
-  "CMakeFiles/SSC.dir/State.cpp.o"
-  "CMakeFiles/SSC.dir/jsoncpp.cpp.o"
-  "CMakeFiles/SSC.dir/Transition.cpp.o"
+  "CMakeFiles/SSC.dir/main.cpp.obj"
+  "CMakeFiles/SSC.dir/NFA.cpp.obj"
+  "CMakeFiles/SSC.dir/State.cpp.obj"
+  "CMakeFiles/SSC.dir/jsoncpp.cpp.obj"
+  "CMakeFiles/SSC.dir/Transition.cpp.obj"
   "SSC.pdb"
-  "SSC"
+  "SSC.exe"
+  "SSC.exe.manifest"
+  "libSSC.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
