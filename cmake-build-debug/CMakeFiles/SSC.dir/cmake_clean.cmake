@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SSC.dir/State.cpp.obj"
   "CMakeFiles/SSC.dir/jsoncpp.cpp.obj"
   "CMakeFiles/SSC.dir/Transition.cpp.obj"
+  "CMakeFiles/SSC.dir/DFA.cpp.obj"
   "SSC.pdb"
   "SSC.exe"
   "SSC.exe.manifest"

@@ -122,6 +122,33 @@ SSC/fast:
 	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/build
 .PHONY : SSC/fast
 
+DFA.obj: DFA.cpp.obj
+
+.PHONY : DFA.obj
+
+# target to build an object file
+DFA.cpp.obj:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA.cpp.obj
+.PHONY : DFA.cpp.obj
+
+DFA.i: DFA.cpp.i
+
+.PHONY : DFA.i
+
+# target to preprocess a source file
+DFA.cpp.i:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA.cpp.i
+.PHONY : DFA.cpp.i
+
+DFA.s: DFA.cpp.s
+
+.PHONY : DFA.s
+
+# target to generate assembly for a file
+DFA.cpp.s:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA.cpp.s
+.PHONY : DFA.cpp.s
+
 NFA.obj: NFA.cpp.obj
 
 .PHONY : NFA.obj
@@ -266,6 +293,9 @@ help:
 	@echo ... edit_cache
 	@echo ... SSC
 	@echo ... rebuild_cache
+	@echo ... DFA.obj
+	@echo ... DFA.i
+	@echo ... DFA.s
 	@echo ... NFA.obj
 	@echo ... NFA.i
 	@echo ... NFA.s

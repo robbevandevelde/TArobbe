@@ -10,28 +10,77 @@ NFA::NFA(string &NFAjson) {
     Json::Value obj;
     reader.parse(ifs, obj);
     const Json::Value &alphabet = obj["alphabet"];
-    for (int i = 0; i < alphabet.size(); i++) {
-        alfabet.push_back(alphabet[i].asString());
+    if(alphabet!=NULL) {
+        for (int i = 0; i < alphabet.size(); i++) {
+            alfabet.push_back(alphabet[i].asString());
+        }
     }
     const Json::Value& states = obj["states"];
-    for (int i = 0; i < states.size(); i++) {
-        string naamState = states.(states[i]["name"].asString());
-        bool startingState = states.(states[i]["starting"].asBool());
-        bool acceptingState = states.(states[i]["accepting"].asBool());
-        State* State = new State(naamState, startingState, acceptingState);
-        NFAstates.push_back(State);
+    if(states!=NULL) {
+        for (int i = 0; i < states.size(); i++) {
+            string naamState = states.(states[i]["name"].asString());
+            bool startingState = states.(states[i]["starting"].asBool());
+            bool acceptingState = states.(states[i]["accepting"].asBool());
+            State *State = new State(naamState, startingState, acceptingState);
+            NFAstates.push_back(State);
+        }
     }
 
-    const Json::Value& transitions = obj["transitions"];
-    for (int i = 0; i < transitions.size(); i++) {
-        string from = transitions.(transitions[i]["from"]);
-        string to = transitions.(transitions[i]["to"]);
-        string input = transitions.(transitions[i]["input"].asString());
-        State*
-        //new Transition(from, to, input);
+    Json::Value transitions = obj["transitions"];
+    if(transitions!=NULL){
+        for (int i = 0; i < transitions.size(); i++) {
+            string from = transitions.(transitions[i]["from"]);
+            string to = transitions.(transitions[i]["to"]);
+            string input = transitions.(transitions[i]["input"].asString());
+            State* fromstate;                  // declare states
+            State* tostate;
+            bool isValidInput = false;
+            bool isValidStateFrom = false;
+            bool isValidStateTo = false;
+            //check in input is correct
+            for(string inputIT : alfabet){
+                if (inputIT == input){
+                    isValidInput = true;
+                }
+            }
+            for (auto &statesIT : NFAstates){
+                if(from == statesIT->getName()) {
+                    isValidStateFrom == true;
+                    fromstate = statesIT;
+                }
+                if(to == statesIT->getName()) {
+                    isValidStateTo = true;
+                    tostate = statesIT;
+                }
+            }
+            if(isValidInput== true && isValidStateFrom == true && isValidStateTo == true){
+                Transition* transition = new Transition(fromstate, tostate, input)
+                NFAtransitions.push_back(transition);
+            }
+        }
     }
+
 }
 
 void NFA::SSC() {
+    DFA* NEW_DFA = new DFA;
+    for (auto states : NFAstates){
+        if( states->isStart() == true){
+            NEW_DFA->addState(states);
+            for(auto i : alfabet){
+                new State(false, false, false) = getTrans(states, i);
+            }
+        }
+    }
+
+
+}
+
+vector<State*> NFA::getTrans(State *from, string input) {       // transitions need to be a vector
+    for (auto trans : NFAtransitions){
+        if(trans->getFrom() == from && trans->getInput() == input){
+            return trans->getTo();
+        }
+    }
 
 }

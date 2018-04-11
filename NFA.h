@@ -10,7 +10,7 @@
 #include "Transition.h"
 #include <json.h>
 #include <set>
-
+#include "DFA.h"
 using namespace std;
 class NFA {
 private:
@@ -18,10 +18,10 @@ private:
     vector<Transition*> NFAtransitions;
     vector <State*> NFAstates;
 
-
 public:
     NFA(string& NFAjson);
     void SSC();
+    vector<State*> getTrans(State* from, string input);
 
 };
 

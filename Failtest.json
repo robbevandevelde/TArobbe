@@ -7,7 +7,7 @@
   "states": [
     {
       "name": "44343",
-      "starting": yes,
+      "starting": "yes",
       "accepting": false
     },
     {

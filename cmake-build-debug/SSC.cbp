@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/robbe/TArobbe/DFA.cpp">
+			<Option target="SSC"/>
+		</Unit>
+		<Unit filename="C:/Users/robbe/TArobbe/DFA.h">
+			<Option target="SSC"/>
+		</Unit>
 		<Unit filename="C:/Users/robbe/TArobbe/NFA.cpp">
 			<Option target="SSC"/>
 		</Unit>
