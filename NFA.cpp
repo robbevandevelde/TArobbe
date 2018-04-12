@@ -8,29 +8,30 @@ NFA::NFA(string &NFAjson) {
     ifstream ifs(NFAjson);
     Json::Value obj;
     ifs >> obj;
-    Json::Value alphabet = obj.get("alphabet", NULL);
-    if(alphabet!=NULL) {
+    Json::Value alphabet = obj.get("alphabet", "geen trans");
+
+
         for (int i = 0; i < alphabet.size(); i++) {
             alfabet.push_back(alphabet[i].asString());
         }
-    }
-    const Json::Value& states = obj.get("states", NULL);
-    if(states!=NULL) {
+
+    Json::Value states = obj.get("states", "geen states");
+
         for (int i = 0; i < states.size(); i++) {
-            string naamState = states.(states[i]["name"].asString());
-            bool startingState = states.(states[i]["starting"].asBool());
-            bool acceptingState = states.(states[i]["accepting"].asBool());
-            State *State = new State(naamState, startingState, acceptingState);
+            string naamState = states[i].get("name", "name not found").asString();
+            bool startingState = states[i].get("starting", false).asBool();
+            bool acceptingState = states[i].get("accepting", false).asBool();
+            State* State = new State(naamState, startingState, acceptingState);
             NFAstates.push_back(State);
         }
-    }
 
-    Json::Value transitions = obj.get("transitions", NULL);
-    if(transitions!=NULL){
+
+    Json::Value transitions = obj.get("transitions", "geen trans");
+
         for (int i = 0; i < transitions.size(); i++) {
-            string from = transitions.(transitions[i]["from"].asString());
-            string to = transitions.(transitions[i]["to"].asString());
-            string input = transitions.(transitions[i]["input"].asString());
+            string from = transitions.get("from", "from not found").asString();
+            string to = transitions.get("to", "to not found").asString();
+            string input = transitions.get("input", "input not found").asString();
             State* fromState;                  // declare states
             State* toState;
             vector <State*> vectorIfNewTrans;
@@ -70,11 +71,8 @@ NFA::NFA(string &NFAjson) {
             }
         }
     }
-    else{
-        cout<< "geen transitie gevonden"<<endl;
-    }
 
-}
+
 
 void NFA::SSC() {
     DFA* NEW_DFA = new DFA;
@@ -82,7 +80,7 @@ void NFA::SSC() {
         if( states->isStart() == true){
             NEW_DFA->addState(states);
             for(auto i : alfabet){
-                new State(false, false, false) = getTrans(states, i);
+                //new State(false, false, false) = getTrans(states, i);
             }
         }
     }

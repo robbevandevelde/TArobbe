@@ -8,8 +8,7 @@
 #include <fstream>
 #include "State.h"
 #include "NFA_Transition.h"
-#include "json.h"
-#include "jsoncpp.cpp"
+#include <json.h>
 #include "DFA.h"
 using namespace std;
 class NFA {
