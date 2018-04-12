@@ -156,29 +156,29 @@ CMakeFiles/SSC.dir/jsoncpp.cpp.obj.provides: CMakeFiles/SSC.dir/jsoncpp.cpp.obj.
 CMakeFiles/SSC.dir/jsoncpp.cpp.obj.provides.build: CMakeFiles/SSC.dir/jsoncpp.cpp.obj
 
 
-CMakeFiles/SSC.dir/Transition.cpp.obj: CMakeFiles/SSC.dir/flags.make
-CMakeFiles/SSC.dir/Transition.cpp.obj: CMakeFiles/SSC.dir/includes_CXX.rsp
-CMakeFiles/SSC.dir/Transition.cpp.obj: ../Transition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\robbe\TArobbe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SSC.dir/Transition.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SSC.dir\Transition.cpp.obj -c C:\Users\robbe\TArobbe\Transition.cpp
+CMakeFiles/SSC.dir/NFA_Transition.cpp.obj: CMakeFiles/SSC.dir/flags.make
+CMakeFiles/SSC.dir/NFA_Transition.cpp.obj: CMakeFiles/SSC.dir/includes_CXX.rsp
+CMakeFiles/SSC.dir/NFA_Transition.cpp.obj: ../NFA_Transition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\robbe\TArobbe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SSC.dir/NFA_Transition.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SSC.dir\NFA_Transition.cpp.obj -c C:\Users\robbe\TArobbe\NFA_Transition.cpp
 
-CMakeFiles/SSC.dir/Transition.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SSC.dir/Transition.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\robbe\TArobbe\Transition.cpp > CMakeFiles\SSC.dir\Transition.cpp.i
+CMakeFiles/SSC.dir/NFA_Transition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SSC.dir/NFA_Transition.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\robbe\TArobbe\NFA_Transition.cpp > CMakeFiles\SSC.dir\NFA_Transition.cpp.i
 
-CMakeFiles/SSC.dir/Transition.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SSC.dir/Transition.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\robbe\TArobbe\Transition.cpp -o CMakeFiles\SSC.dir\Transition.cpp.s
+CMakeFiles/SSC.dir/NFA_Transition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SSC.dir/NFA_Transition.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\robbe\TArobbe\NFA_Transition.cpp -o CMakeFiles\SSC.dir\NFA_Transition.cpp.s
 
-CMakeFiles/SSC.dir/Transition.cpp.obj.requires:
+CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.requires:
 
-.PHONY : CMakeFiles/SSC.dir/Transition.cpp.obj.requires
+.PHONY : CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.requires
 
-CMakeFiles/SSC.dir/Transition.cpp.obj.provides: CMakeFiles/SSC.dir/Transition.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/Transition.cpp.obj.provides.build
-.PHONY : CMakeFiles/SSC.dir/Transition.cpp.obj.provides
+CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.provides: CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.provides.build
+.PHONY : CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.provides
 
-CMakeFiles/SSC.dir/Transition.cpp.obj.provides.build: CMakeFiles/SSC.dir/Transition.cpp.obj
+CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.provides.build: CMakeFiles/SSC.dir/NFA_Transition.cpp.obj
 
 
 CMakeFiles/SSC.dir/DFA.cpp.obj: CMakeFiles/SSC.dir/flags.make
@@ -206,14 +206,40 @@ CMakeFiles/SSC.dir/DFA.cpp.obj.provides: CMakeFiles/SSC.dir/DFA.cpp.obj.requires
 CMakeFiles/SSC.dir/DFA.cpp.obj.provides.build: CMakeFiles/SSC.dir/DFA.cpp.obj
 
 
+CMakeFiles/SSC.dir/DFA_Transition.cpp.obj: CMakeFiles/SSC.dir/flags.make
+CMakeFiles/SSC.dir/DFA_Transition.cpp.obj: CMakeFiles/SSC.dir/includes_CXX.rsp
+CMakeFiles/SSC.dir/DFA_Transition.cpp.obj: ../DFA_Transition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\robbe\TArobbe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SSC.dir/DFA_Transition.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SSC.dir\DFA_Transition.cpp.obj -c C:\Users\robbe\TArobbe\DFA_Transition.cpp
+
+CMakeFiles/SSC.dir/DFA_Transition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SSC.dir/DFA_Transition.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\robbe\TArobbe\DFA_Transition.cpp > CMakeFiles\SSC.dir\DFA_Transition.cpp.i
+
+CMakeFiles/SSC.dir/DFA_Transition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SSC.dir/DFA_Transition.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\robbe\TArobbe\DFA_Transition.cpp -o CMakeFiles\SSC.dir\DFA_Transition.cpp.s
+
+CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.requires
+
+CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.provides: CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.provides.build
+.PHONY : CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.provides
+
+CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.provides.build: CMakeFiles/SSC.dir/DFA_Transition.cpp.obj
+
+
 # Object files for target SSC
 SSC_OBJECTS = \
 "CMakeFiles/SSC.dir/main.cpp.obj" \
 "CMakeFiles/SSC.dir/NFA.cpp.obj" \
 "CMakeFiles/SSC.dir/State.cpp.obj" \
 "CMakeFiles/SSC.dir/jsoncpp.cpp.obj" \
-"CMakeFiles/SSC.dir/Transition.cpp.obj" \
-"CMakeFiles/SSC.dir/DFA.cpp.obj"
+"CMakeFiles/SSC.dir/NFA_Transition.cpp.obj" \
+"CMakeFiles/SSC.dir/DFA.cpp.obj" \
+"CMakeFiles/SSC.dir/DFA_Transition.cpp.obj"
 
 # External object files for target SSC
 SSC_EXTERNAL_OBJECTS =
@@ -222,13 +248,14 @@ SSC.exe: CMakeFiles/SSC.dir/main.cpp.obj
 SSC.exe: CMakeFiles/SSC.dir/NFA.cpp.obj
 SSC.exe: CMakeFiles/SSC.dir/State.cpp.obj
 SSC.exe: CMakeFiles/SSC.dir/jsoncpp.cpp.obj
-SSC.exe: CMakeFiles/SSC.dir/Transition.cpp.obj
+SSC.exe: CMakeFiles/SSC.dir/NFA_Transition.cpp.obj
 SSC.exe: CMakeFiles/SSC.dir/DFA.cpp.obj
+SSC.exe: CMakeFiles/SSC.dir/DFA_Transition.cpp.obj
 SSC.exe: CMakeFiles/SSC.dir/build.make
 SSC.exe: CMakeFiles/SSC.dir/linklibs.rsp
 SSC.exe: CMakeFiles/SSC.dir/objects1.rsp
 SSC.exe: CMakeFiles/SSC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\robbe\TArobbe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable SSC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\robbe\TArobbe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SSC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SSC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -240,8 +267,9 @@ CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/main.cpp.obj.requires
 CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/NFA.cpp.obj.requires
 CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/State.cpp.obj.requires
 CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/jsoncpp.cpp.obj.requires
-CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/Transition.cpp.obj.requires
+CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/NFA_Transition.cpp.obj.requires
 CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/DFA.cpp.obj.requires
+CMakeFiles/SSC.dir/requires: CMakeFiles/SSC.dir/DFA_Transition.cpp.obj.requires
 
 .PHONY : CMakeFiles/SSC.dir/requires
 

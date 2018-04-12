@@ -90,6 +90,12 @@
 		<Unit filename="C:/Users/robbe/TArobbe/DFA.h">
 			<Option target="SSC"/>
 		</Unit>
+		<Unit filename="C:/Users/robbe/TArobbe/DFA_Transition.cpp">
+			<Option target="SSC"/>
+		</Unit>
+		<Unit filename="C:/Users/robbe/TArobbe/DFA_Transition.h">
+			<Option target="SSC"/>
+		</Unit>
 		<Unit filename="C:/Users/robbe/TArobbe/NFA.cpp">
 			<Option target="SSC"/>
 		</Unit>
@@ -99,16 +105,16 @@
 		<Unit filename="C:/Users/robbe/TArobbe/NFA.json">
 			<Option target="SSC"/>
 		</Unit>
+		<Unit filename="C:/Users/robbe/TArobbe/NFA_Transition.cpp">
+			<Option target="SSC"/>
+		</Unit>
+		<Unit filename="C:/Users/robbe/TArobbe/NFA_Transition.h">
+			<Option target="SSC"/>
+		</Unit>
 		<Unit filename="C:/Users/robbe/TArobbe/State.cpp">
 			<Option target="SSC"/>
 		</Unit>
 		<Unit filename="C:/Users/robbe/TArobbe/State.h">
-			<Option target="SSC"/>
-		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/Transition.cpp">
-			<Option target="SSC"/>
-		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/Transition.h">
 			<Option target="SSC"/>
 		</Unit>
 		<Unit filename="C:/Users/robbe/TArobbe/json">

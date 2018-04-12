@@ -6,13 +6,13 @@
 #define SSC_DFA_H
 #include <vector>
 #include "State.h"
-#include "Transition.h"
+#include "NFA_Transition.h"
 using namespace std;
 
 class DFA {
 private:
     vector<string> alfabet;
-    vector<Transition*> DFAtransitions;
+    vector<NFA_Transition*> DFAtransitions;
     vector <State*> DFAstates;
 public:
     void addState(State*);

@@ -5,9 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/robbe/TArobbe/DFA.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/DFA.cpp.obj"
+  "C:/Users/robbe/TArobbe/DFA_Transition.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/DFA_Transition.cpp.obj"
   "C:/Users/robbe/TArobbe/NFA.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/NFA.cpp.obj"
+  "C:/Users/robbe/TArobbe/NFA_Transition.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/NFA_Transition.cpp.obj"
   "C:/Users/robbe/TArobbe/State.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/State.cpp.obj"
-  "C:/Users/robbe/TArobbe/Transition.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/Transition.cpp.obj"
   "C:/Users/robbe/TArobbe/jsoncpp.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/jsoncpp.cpp.obj"
   "C:/Users/robbe/TArobbe/main.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/main.cpp.obj"
   )

@@ -7,7 +7,7 @@
 #include <iostream>
 #include <fstream>
 //#include "State.h"
-#include "Transition.h"
+#include "NFA_Transition.h"
 #include <json.h>
 #include <set>
 #include "DFA.h"
@@ -15,7 +15,7 @@ using namespace std;
 class NFA {
 private:
     vector<string> alfabet;
-    vector<Transition*> NFAtransitions;
+    vector<NFA_Transition*> NFAtransitions;
     vector <State*> NFAstates;
 
 public:

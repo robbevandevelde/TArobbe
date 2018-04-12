@@ -29,11 +29,12 @@ NFA::NFA(string &NFAjson) {
     Json::Value transitions = obj["transitions"];
     if(transitions!=NULL){
         for (int i = 0; i < transitions.size(); i++) {
-            string from = transitions.(transitions[i]["from"]);
-            string to = transitions.(transitions[i]["to"]);
+            string from = transitions.(transitions[i]["from"].asString());
+            string to = transitions.(transitions[i]["to"].asString());
             string input = transitions.(transitions[i]["input"].asString());
-            State* fromstate;                  // declare states
-            State* tostate;
+            State* fromState;                  // declare states
+            State* toState;
+            vector <State*> vectorIfNewTrans;
             bool isValidInput = false;
             bool isValidStateFrom = false;
             bool isValidStateTo = false;
@@ -46,18 +47,32 @@ NFA::NFA(string &NFAjson) {
             for (auto &statesIT : NFAstates){
                 if(from == statesIT->getName()) {
                     isValidStateFrom == true;
-                    fromstate = statesIT;
+                    fromState = statesIT;
                 }
                 if(to == statesIT->getName()) {
                     isValidStateTo = true;
-                    tostate = statesIT;
+                    toState = statesIT;
                 }
             }
             if(isValidInput== true && isValidStateFrom == true && isValidStateTo == true){
-                Transition* transition = new Transition(fromstate, tostate, input)
-                NFAtransitions.push_back(transition);
+                for(auto trans : NFAtransitions){
+                    if(trans->getFrom()== fromState && trans->getInput() == input)
+                        trans->setTo(toState);
+                    else{
+                        vectorIfNewTrans.push_back(toState);
+                        NFA_Transition* transition = new NFA_Transition(fromState, vectorIfNewTrans, input);
+                        NFAtransitions.push_back(transition);
+                    }
+                }
+            }
+            else{
+                cout << "Geen jusite trans" <<endl;
+                return;
             }
         }
+    }
+    else{
+        cout<< "geen transitie gevonden"<<endl;
     }
 
 }

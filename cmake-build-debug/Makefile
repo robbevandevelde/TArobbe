@@ -149,6 +149,33 @@ DFA.cpp.s:
 	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA.cpp.s
 .PHONY : DFA.cpp.s
 
+DFA_Transition.obj: DFA_Transition.cpp.obj
+
+.PHONY : DFA_Transition.obj
+
+# target to build an object file
+DFA_Transition.cpp.obj:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA_Transition.cpp.obj
+.PHONY : DFA_Transition.cpp.obj
+
+DFA_Transition.i: DFA_Transition.cpp.i
+
+.PHONY : DFA_Transition.i
+
+# target to preprocess a source file
+DFA_Transition.cpp.i:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA_Transition.cpp.i
+.PHONY : DFA_Transition.cpp.i
+
+DFA_Transition.s: DFA_Transition.cpp.s
+
+.PHONY : DFA_Transition.s
+
+# target to generate assembly for a file
+DFA_Transition.cpp.s:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/DFA_Transition.cpp.s
+.PHONY : DFA_Transition.cpp.s
+
 NFA.obj: NFA.cpp.obj
 
 .PHONY : NFA.obj
@@ -176,6 +203,33 @@ NFA.cpp.s:
 	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/NFA.cpp.s
 .PHONY : NFA.cpp.s
 
+NFA_Transition.obj: NFA_Transition.cpp.obj
+
+.PHONY : NFA_Transition.obj
+
+# target to build an object file
+NFA_Transition.cpp.obj:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/NFA_Transition.cpp.obj
+.PHONY : NFA_Transition.cpp.obj
+
+NFA_Transition.i: NFA_Transition.cpp.i
+
+.PHONY : NFA_Transition.i
+
+# target to preprocess a source file
+NFA_Transition.cpp.i:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/NFA_Transition.cpp.i
+.PHONY : NFA_Transition.cpp.i
+
+NFA_Transition.s: NFA_Transition.cpp.s
+
+.PHONY : NFA_Transition.s
+
+# target to generate assembly for a file
+NFA_Transition.cpp.s:
+	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/NFA_Transition.cpp.s
+.PHONY : NFA_Transition.cpp.s
+
 State.obj: State.cpp.obj
 
 .PHONY : State.obj
@@ -202,33 +256,6 @@ State.s: State.cpp.s
 State.cpp.s:
 	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/State.cpp.s
 .PHONY : State.cpp.s
-
-Transition.obj: Transition.cpp.obj
-
-.PHONY : Transition.obj
-
-# target to build an object file
-Transition.cpp.obj:
-	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/Transition.cpp.obj
-.PHONY : Transition.cpp.obj
-
-Transition.i: Transition.cpp.i
-
-.PHONY : Transition.i
-
-# target to preprocess a source file
-Transition.cpp.i:
-	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/Transition.cpp.i
-.PHONY : Transition.cpp.i
-
-Transition.s: Transition.cpp.s
-
-.PHONY : Transition.s
-
-# target to generate assembly for a file
-Transition.cpp.s:
-	$(MAKE) -f CMakeFiles\SSC.dir\build.make CMakeFiles/SSC.dir/Transition.cpp.s
-.PHONY : Transition.cpp.s
 
 jsoncpp.obj: jsoncpp.cpp.obj
 
@@ -296,15 +323,18 @@ help:
 	@echo ... DFA.obj
 	@echo ... DFA.i
 	@echo ... DFA.s
+	@echo ... DFA_Transition.obj
+	@echo ... DFA_Transition.i
+	@echo ... DFA_Transition.s
 	@echo ... NFA.obj
 	@echo ... NFA.i
 	@echo ... NFA.s
+	@echo ... NFA_Transition.obj
+	@echo ... NFA_Transition.i
+	@echo ... NFA_Transition.s
 	@echo ... State.obj
 	@echo ... State.i
 	@echo ... State.s
-	@echo ... Transition.obj
-	@echo ... Transition.i
-	@echo ... Transition.s
 	@echo ... jsoncpp.obj
 	@echo ... jsoncpp.i
 	@echo ... jsoncpp.s
