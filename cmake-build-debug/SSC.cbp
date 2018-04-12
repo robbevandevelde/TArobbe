@@ -117,9 +117,6 @@
 		<Unit filename="C:/Users/robbe/TArobbe/State.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/json">
-			<Option target="SSC"/>
-		</Unit>
 		<Unit filename="C:/Users/robbe/TArobbe/json/json-forwards.h">
 			<Option target="SSC"/>
 		</Unit>

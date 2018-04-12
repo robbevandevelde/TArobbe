@@ -6,16 +6,15 @@
 //https://en.wikibooks.org/wiki/JsonCpp    Als bron
 NFA::NFA(string &NFAjson) {
     ifstream ifs(NFAjson);
-    Json::Reader reader;
     Json::Value obj;
-    reader.parse(ifs, obj);
-    const Json::Value &alphabet = obj["alphabet"];
+    ifs >> obj;
+    Json::Value alphabet = obj.get("alphabet", NULL);
     if(alphabet!=NULL) {
         for (int i = 0; i < alphabet.size(); i++) {
             alfabet.push_back(alphabet[i].asString());
         }
     }
-    const Json::Value& states = obj["states"];
+    const Json::Value& states = obj.get("states", NULL);
     if(states!=NULL) {
         for (int i = 0; i < states.size(); i++) {
             string naamState = states.(states[i]["name"].asString());
@@ -26,7 +25,7 @@ NFA::NFA(string &NFAjson) {
         }
     }
 
-    Json::Value transitions = obj["transitions"];
+    Json::Value transitions = obj.get("transitions", NULL);
     if(transitions!=NULL){
         for (int i = 0; i < transitions.size(); i++) {
             string from = transitions.(transitions[i]["from"].asString());
@@ -46,7 +45,7 @@ NFA::NFA(string &NFAjson) {
             }
             for (auto &statesIT : NFAstates){
                 if(from == statesIT->getName()) {
-                    isValidStateFrom == true;
+                    isValidStateFrom = true;
                     fromState = statesIT;
                 }
                 if(to == statesIT->getName()) {

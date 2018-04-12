@@ -6,10 +6,10 @@
 #define SSC_NFA_H
 #include <iostream>
 #include <fstream>
-//#include "State.h"
+#include "State.h"
 #include "NFA_Transition.h"
-#include <json.h>
-#include <set>
+#include "json.h"
+#include "jsoncpp.cpp"
 #include "DFA.h"
 using namespace std;
 class NFA {
