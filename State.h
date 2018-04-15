@@ -15,7 +15,7 @@ private:
     string name;
 
 public:
-    State(string &Name, bool Accept, bool Start){accepting= Accept, start= Start, name = Name;}
+    State(string &Name, bool Accept, bool Start){name = Name, accepting= Accept, start= Start;}
 
     bool isAccepting() const {
         return accepting;

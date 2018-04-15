@@ -9,6 +9,7 @@ CMakeFiles/SSC.dir/DFA.cpp.obj: ../State.h
 CMakeFiles/SSC.dir/DFA_Transition.cpp.obj: ../DFA_Transition.cpp
 CMakeFiles/SSC.dir/DFA_Transition.cpp.obj: ../DFA_Transition.h
 
+CMakeFiles/SSC.dir/NFA.cpp.obj: ../json/json.h
 CMakeFiles/SSC.dir/NFA.cpp.obj: ../DFA.h
 CMakeFiles/SSC.dir/NFA.cpp.obj: ../NFA.cpp
 CMakeFiles/SSC.dir/NFA.cpp.obj: ../NFA.h

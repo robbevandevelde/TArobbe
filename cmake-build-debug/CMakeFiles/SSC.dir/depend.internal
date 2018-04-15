@@ -10,6 +10,7 @@ CMakeFiles/SSC.dir/DFA_Transition.cpp.obj
  C:/Users/robbe/TArobbe/DFA_Transition.cpp
  C:/Users/robbe/TArobbe/DFA_Transition.h
 CMakeFiles/SSC.dir/NFA.cpp.obj
+ ../json/json.h
  C:/Users/robbe/TArobbe/DFA.h
  C:/Users/robbe/TArobbe/NFA.cpp
  C:/Users/robbe/TArobbe/NFA.h

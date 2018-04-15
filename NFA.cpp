@@ -8,7 +8,7 @@ NFA::NFA(string &NFAjson) {
     ifstream ifs(NFAjson);
     Json::Value obj;
     ifs >> obj;
-    Json::Value alphabet = obj.get("alphabet", "geen trans");
+    Json::Value alphabet = obj.get("alphabet", "geen alfabet");
 
 
         for (int i = 0; i < alphabet.size(); i++) {
@@ -21,8 +21,8 @@ NFA::NFA(string &NFAjson) {
             string naamState = states[i].get("name", "name not found").asString();
             bool startingState = states[i].get("starting", false).asBool();
             bool acceptingState = states[i].get("accepting", false).asBool();
-            State* State = new State(naamState, startingState, acceptingState);
-            NFAstates.push_back(State);
+            State newState = State(naamState, startingState, acceptingState);
+            NFAstates.push_back(&newState);
         }
 
 
