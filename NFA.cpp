@@ -78,9 +78,24 @@ void NFA::SSC() {
     DFA* NEW_DFA = new DFA;
     for (auto states : NFAstates){
         if( states->isStart() == true){
-            NEW_DFA->addState(states);
+            vector <State*> firstState;
+            firstState.push_back(states);
+            NEW_DFA->addState(firstState);
             for(auto i : alfabet){
-                //new State(false, false, false) = getTrans(states, i);
+                NEW_DFA->addState(getTrans(states, i));
+                DFA_Transition* transition = new DFA_Transition(firstState, getTrans(states, i), i);
+                NEW_DFA->addTransition(transition);
+            }
+        }
+    }
+    for (auto states : NEW_DFA->returnDFAStates()){
+        for ( auto substate : states){
+            vector <State*> newState;
+            for (auto i : alfabet){
+                vector <State*> transFromSub = getTrans(substate, i);
+                for (auto statesFromSub:transFromSub){
+                    newState.push_back(statesFromSub);
+                }
             }
         }
     }

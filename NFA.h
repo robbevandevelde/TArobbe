@@ -8,6 +8,7 @@
 #include <fstream>
 #include "State.h"
 #include "NFA_Transition.h"
+#include "DFA_Transition.h"
 #include <json.h>
 #include "DFA.h"
 using namespace std;

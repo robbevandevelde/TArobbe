@@ -13,6 +13,7 @@ private:
     State* from;
     vector <State*> to;
     string input;
+
 public:
     State *getFrom() const;
 
@@ -26,9 +27,10 @@ public:
 
     void setInput(const string &input);
 
-public:
     NFA_Transition(State* from1, vector<State*> to1, string& label){from= from1, to= to1, input= label;};
-    bool isLegit(State* from, State* to);
+
+
+
 
 };
 

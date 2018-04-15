@@ -4,9 +4,7 @@
 
 #include "NFA_Transition.h"
 
-bool NFA_Transition::isLegit(State *from, State *to) {
-    return false;
-}
+
 
 State *NFA_Transition::getFrom() const {
     return from;
