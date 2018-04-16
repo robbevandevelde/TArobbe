@@ -19,7 +19,7 @@ private:
     vector <State*> NFAstates;
 
 public:
-    NFA(string& NFAjson);
+    NFA(const string& NFAjson);
     void SSC();
     vector<State*> getTrans(State* from, string input);
 

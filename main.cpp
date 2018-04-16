@@ -1,6 +1,6 @@
 #include <iostream>
-
+#include "NFA.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    NFA file = NFA("NFA.json");
+
 }

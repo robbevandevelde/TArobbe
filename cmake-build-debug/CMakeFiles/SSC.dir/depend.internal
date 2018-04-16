@@ -4,14 +4,16 @@
 CMakeFiles/SSC.dir/DFA.cpp.obj
  C:/Users/robbe/TArobbe/DFA.cpp
  C:/Users/robbe/TArobbe/DFA.h
- C:/Users/robbe/TArobbe/NFA_Transition.h
+ C:/Users/robbe/TArobbe/DFA_Transition.h
  C:/Users/robbe/TArobbe/State.h
 CMakeFiles/SSC.dir/DFA_Transition.cpp.obj
  C:/Users/robbe/TArobbe/DFA_Transition.cpp
  C:/Users/robbe/TArobbe/DFA_Transition.h
+ C:/Users/robbe/TArobbe/State.h
 CMakeFiles/SSC.dir/NFA.cpp.obj
  ../json/json.h
  C:/Users/robbe/TArobbe/DFA.h
+ C:/Users/robbe/TArobbe/DFA_Transition.h
  C:/Users/robbe/TArobbe/NFA.cpp
  C:/Users/robbe/TArobbe/NFA.h
  C:/Users/robbe/TArobbe/NFA_Transition.h
@@ -27,4 +29,10 @@ CMakeFiles/SSC.dir/jsoncpp.cpp.obj
  C:/Users/robbe/TArobbe/json/json.h
  C:/Users/robbe/TArobbe/jsoncpp.cpp
 CMakeFiles/SSC.dir/main.cpp.obj
+ ../json/json.h
+ C:/Users/robbe/TArobbe/DFA.h
+ C:/Users/robbe/TArobbe/DFA_Transition.h
+ C:/Users/robbe/TArobbe/NFA.h
+ C:/Users/robbe/TArobbe/NFA_Transition.h
+ C:/Users/robbe/TArobbe/State.h
  C:/Users/robbe/TArobbe/main.cpp

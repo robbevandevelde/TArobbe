@@ -75,14 +75,18 @@ vector
 -
 State.h
 C:/Users/robbe/TArobbe/State.h
-NFA_Transition.h
-C:/Users/robbe/TArobbe/NFA_Transition.h
+DFA_Transition.h
+C:/Users/robbe/TArobbe/DFA_Transition.h
 
 C:/Users/robbe/TArobbe/DFA_Transition.cpp
 DFA_Transition.h
 C:/Users/robbe/TArobbe/DFA_Transition.h
 
 C:/Users/robbe/TArobbe/DFA_Transition.h
+vector
+-
+State.h
+C:/Users/robbe/TArobbe/State.h
 
 C:/Users/robbe/TArobbe/NFA.cpp
 NFA.h
@@ -97,6 +101,8 @@ State.h
 C:/Users/robbe/TArobbe/State.h
 NFA_Transition.h
 C:/Users/robbe/TArobbe/NFA_Transition.h
+DFA_Transition.h
+C:/Users/robbe/TArobbe/DFA_Transition.h
 json.h
 -
 DFA.h
@@ -273,4 +279,6 @@ float.h
 C:/Users/robbe/TArobbe/main.cpp
 iostream
 -
+NFA.h
+C:/Users/robbe/TArobbe/NFA.h
 
