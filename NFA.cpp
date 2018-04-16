@@ -46,7 +46,7 @@ NFA::NFA(const string &NFAjson) {
                     isValidInput = true;
                 }
             }
-            for (auto &statesIT : nfaStates){
+            for (auto statesIT : nfaStates){
                 if(from == statesIT->getName()) {
                     isValidStateFrom = true;
                     fromState = statesIT;
