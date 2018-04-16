@@ -11,7 +11,7 @@ using namespace std;
 
 class DFA {
 private:
-    vector<string> alfabet;
+    vector<char> alfabet;
     vector<DFA_Transition*> DFAtransitions;
     vector <vector<State*>> DFAstates;
 public:

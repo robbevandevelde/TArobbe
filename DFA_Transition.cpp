@@ -20,11 +20,11 @@ void DFA_Transition::setTo(const vector<State *> &to) {
     DFA_Transition::to = to;
 }
 
-const string &DFA_Transition::getInput() const {
+const char &DFA_Transition::getInput() const {
     return input;
 }
 
-void DFA_Transition::setInput(const string &input) {
+void DFA_Transition::setInput(const char &input) {
     DFA_Transition::input = input;
 }
 

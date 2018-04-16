@@ -14,14 +14,14 @@
 using namespace std;
 class NFA {
 private:
-    vector<string> alfabet;
+    vector<char> alphabet;
     vector<NFA_Transition*> NFAtransitions;
     vector <State*> NFAstates;
 
 public:
     NFA(const string& NFAjson);
     void SSC();
-    vector<State*> getTrans(State* from, string input);
+    vector<State*> getTrans(State* from, char input);
 
 };
 

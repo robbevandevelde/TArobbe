@@ -13,7 +13,7 @@ private:
     vector <State*> from;
     vector <State*> to;
 
-    string input;
+    char input;
 public:
     const vector<State *> &getFrom() const;
 
@@ -23,11 +23,11 @@ public:
 
     void setTo(const vector<State *> &to);
 
-    const string &getInput() const;
+    const char &getInput() const;
 
-    void setInput(const string &input);
+    void setInput(const char &input);
 
-    DFA_Transition(vector<State*> from1, vector<State*> to1, string& label){from= from1, to= to1, input= label;};
+    DFA_Transition(vector<State*> from1, vector<State*> to1, char& label){from= from1, to= to1, input= label;};
 
     void appendTo(State * state);
 

@@ -12,7 +12,7 @@ class NFA_Transition {
 private:
     State* from;
     vector <State*> to;
-    string input;
+    char input;
 
 public:
     State *getFrom() const;
@@ -23,11 +23,11 @@ public:
 
     void setTo(State *naar);
 
-    const string &getInput() const;
+    const char &getInput() const;
 
-    void setInput(const string &input);
+    void setInput(const char &input);
 
-    NFA_Transition(State* from1, vector<State*> to1, string& label){from= from1, to= to1, input= label;};
+    NFA_Transition(State* from1, vector<State*> to1, char& label){from= from1, to= to1, input= label;};
 
 
 

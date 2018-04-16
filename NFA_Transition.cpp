@@ -22,10 +22,10 @@ void NFA_Transition::setTo(State *naar) {
     to.push_back(naar);
 }
 
-const string &NFA_Transition::getInput() const {
+const char &NFA_Transition::getInput() const {
     return input;
 }
 
-void NFA_Transition::setInput(const string &input) {
+void NFA_Transition::setInput(const char &input) {
     NFA_Transition::input = input;
 }
