@@ -8,128 +8,130 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/robbe/TArobbe/cmake-build-debug"/>
+				<Option working_dir="/Users/robbe/Desktop/SSC/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/robbe/TArobbe/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="SSC">
-				<Option output="C:/Users/robbe/TArobbe/cmake-build-debug/SSC.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/robbe/TArobbe/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/robbe/TArobbe/json"/>
-					<Add directory="C:/Users/robbe/TArobbe/external"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 SSC"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="SSC/fast">
-				<Option output="C:/Users/robbe/TArobbe/cmake-build-debug/SSC.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/robbe/TArobbe/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/robbe/TArobbe/json"/>
-					<Add directory="C:/Users/robbe/TArobbe/external"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 SSC/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/robbe/TArobbe/cmake-build-debug"/>
+				<Option working_dir="/Users/robbe/Desktop/SSC/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/robbe/TArobbe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/robbe/Desktop/SSC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SSC">
+				<Option output="/Users/robbe/Desktop/SSC/cmake-build-debug/SSC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/robbe/Desktop/SSC/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/robbe/Desktop/SSC/json"/>
+					<Add directory="/Users/robbe/Desktop/SSC/external"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 SSC"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SSC/fast">
+				<Option output="/Users/robbe/Desktop/SSC/cmake-build-debug/SSC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/robbe/Desktop/SSC/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/robbe/Desktop/SSC/json"/>
+					<Add directory="/Users/robbe/Desktop/SSC/external"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 SSC/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/robbe/Desktop/SSC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/robbe/TArobbe/DFA.cpp">
+		<Unit filename="/Users/robbe/Desktop/SSC/DFA.cpp">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/DFA.h">
+		<Unit filename="/Users/robbe/Desktop/SSC/DFA.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/DFA_Transition.cpp">
+		<Unit filename="/Users/robbe/Desktop/SSC/DFA_Transition.cpp">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/DFA_Transition.h">
+		<Unit filename="/Users/robbe/Desktop/SSC/DFA_Transition.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/NFA.cpp">
+		<Unit filename="/Users/robbe/Desktop/SSC/NFA.cpp">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/NFA.h">
+		<Unit filename="/Users/robbe/Desktop/SSC/NFA.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/NFA.json">
+		<Unit filename="/Users/robbe/Desktop/SSC/NFA.json">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/NFA_Transition.cpp">
+		<Unit filename="/Users/robbe/Desktop/SSC/NFA_Transition.cpp">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/NFA_Transition.h">
+		<Unit filename="/Users/robbe/Desktop/SSC/NFA_Transition.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/State.cpp">
+		<Unit filename="/Users/robbe/Desktop/SSC/State.cpp">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/State.h">
+		<Unit filename="/Users/robbe/Desktop/SSC/State.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/json/json-forwards.h">
+		<Unit filename="/Users/robbe/Desktop/SSC/json/json-forwards.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/json/json.h">
+		<Unit filename="/Users/robbe/Desktop/SSC/json/json.h">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/jsoncpp.cpp">
+		<Unit filename="/Users/robbe/Desktop/SSC/jsoncpp.cpp">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/main.cpp">
+		<Unit filename="/Users/robbe/Desktop/SSC/main.cpp">
 			<Option target="SSC"/>
 		</Unit>
-		<Unit filename="C:/Users/robbe/TArobbe/CMakeLists.txt">
+		<Unit filename="/Users/robbe/Desktop/SSC/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

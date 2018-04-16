@@ -19,6 +19,7 @@ public:
     void addTransition(DFA_Transition* tran);
     bool alreadyInStates(vector<State*> checkState);
     vector <vector<State*>> returnDFAStates();
+    void addAlfabet(vector<char> alf);
 };
 
 

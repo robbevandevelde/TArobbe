@@ -25,3 +25,8 @@ bool DFA::alreadyInStates(vector<State*> checkState) {
 vector<vector<State *>> DFA::returnDFAStates() {
     return DFAstates;
 }
+
+void DFA::addAlfabet(vector<char> alf) {
+    alfabet = alf;
+
+}

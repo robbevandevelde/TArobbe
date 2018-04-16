@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/robbe/TArobbe/DFA.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/DFA.cpp.obj"
-  "C:/Users/robbe/TArobbe/DFA_Transition.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/DFA_Transition.cpp.obj"
-  "C:/Users/robbe/TArobbe/NFA.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/NFA.cpp.obj"
-  "C:/Users/robbe/TArobbe/NFA_Transition.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/NFA_Transition.cpp.obj"
-  "C:/Users/robbe/TArobbe/State.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/State.cpp.obj"
-  "C:/Users/robbe/TArobbe/jsoncpp.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/jsoncpp.cpp.obj"
-  "C:/Users/robbe/TArobbe/main.cpp" "C:/Users/robbe/TArobbe/cmake-build-debug/CMakeFiles/SSC.dir/main.cpp.obj"
+  "/Users/robbe/Desktop/SSC/DFA.cpp" "/Users/robbe/Desktop/SSC/cmake-build-debug/CMakeFiles/SSC.dir/DFA.cpp.o"
+  "/Users/robbe/Desktop/SSC/DFA_Transition.cpp" "/Users/robbe/Desktop/SSC/cmake-build-debug/CMakeFiles/SSC.dir/DFA_Transition.cpp.o"
+  "/Users/robbe/Desktop/SSC/NFA.cpp" "/Users/robbe/Desktop/SSC/cmake-build-debug/CMakeFiles/SSC.dir/NFA.cpp.o"
+  "/Users/robbe/Desktop/SSC/NFA_Transition.cpp" "/Users/robbe/Desktop/SSC/cmake-build-debug/CMakeFiles/SSC.dir/NFA_Transition.cpp.o"
+  "/Users/robbe/Desktop/SSC/State.cpp" "/Users/robbe/Desktop/SSC/cmake-build-debug/CMakeFiles/SSC.dir/State.cpp.o"
+  "/Users/robbe/Desktop/SSC/jsoncpp.cpp" "/Users/robbe/Desktop/SSC/cmake-build-debug/CMakeFiles/SSC.dir/jsoncpp.cpp.o"
+  "/Users/robbe/Desktop/SSC/main.cpp" "/Users/robbe/Desktop/SSC/cmake-build-debug/CMakeFiles/SSC.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

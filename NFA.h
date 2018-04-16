@@ -17,10 +17,12 @@ private:
     vector<char> alphabet;
     vector<NFA_Transition*> NFAtransitions;
     vector <State*> NFAstates;
+    vector <State*> garbageState;
+
 
 public:
     NFA(const string& NFAjson);
-    void SSC();
+    DFA SSC();
     vector<State*> getTrans(State* from, char input);
 
 };
