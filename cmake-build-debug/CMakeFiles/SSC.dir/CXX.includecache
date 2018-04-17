@@ -67,11 +67,15 @@ config.h
 ../json/config.h
 
 /Users/robbe/Desktop/SSC/DFA.cpp
+fstream
+-
 DFA.h
 /Users/robbe/Desktop/SSC/DFA.h
 
 /Users/robbe/Desktop/SSC/DFA.h
 vector
+-
+iostream
 -
 State.h
 /Users/robbe/Desktop/SSC/State.h
@@ -281,4 +285,6 @@ iostream
 -
 NFA.h
 /Users/robbe/Desktop/SSC/NFA.h
+DFA.h
+/Users/robbe/Desktop/SSC/DFA.h
 
