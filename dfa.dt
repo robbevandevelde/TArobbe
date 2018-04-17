@@ -1,0 +1,21 @@
+digraph dfa {
+rankdir=LR;
+node [shape = circle];Garbage;
+node [shape = circle];Q0;
+node [shape = doublecircle];Q0Q1
+node [shape = doublecircle];Q1
+node [style = invis]  invis
+invis -> Q0[ label = Start ];
+Q0 -> Q0Q1[label= 0]
+Q0 -> Q1[label= 1]
+Garbage -> Garbage[label= 0]
+Garbage -> Garbage[label= 1]
+Q0 -> Q0Q1[label= 0]
+Q0 -> Q1[label= 1]
+Q0Q1 -> Q0Q1[label= 0]
+Q0Q1 -> Q1[label= 1]
+Q0Q1 -> Garbage[label= 0]
+Q0Q1 -> Q0[label= 1]
+Q1 -> Garbage[label= 0]
+Q1 -> Q0[label= 1]
+}

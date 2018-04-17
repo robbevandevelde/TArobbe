@@ -39,18 +39,36 @@ const vector<DFA_Transition *> &DFA::getDFAtransitions() const {
 void DFA::toDot() {
     ofstream myfile;
     myfile.open("dfa.dt");
-    myfile << "dfa {";
-    myfile << "rankdir=LR";
+    myfile << "digraph dfa {"<<endl;
+    myfile << "rankdir=LR;"<<endl;
     for(auto stat: DFAstates){
         for(auto sub : stat){
-            if(sub->isStart() == true && stat.size() == 1){
-                myfile << "invis ->  "<< getAllNames(stat) << "[ label = Start ]"<<endl;
-            }
             if(sub->isAccepting() == true){
                 myfile << "node [shape = doublecircle];" << getAllNames(stat)<<endl;
             }
+            if (sub->isAccepting() != true && sub->isStart() != true){
+                myfile << "node [shape = circle];" << getAllNames(stat)<<";"<<endl;
+            }
+            if(sub->isStart() == true && stat.size() == 1){
+                myfile << "node [shape = circle];" << getAllNames(stat)<<";"<<endl;
+            }
         }
     }
+    for(auto stat: DFAstates) {
+        for (auto sub : stat) {
+            if(sub->isStart() == true && stat.size() == 1) {
+                myfile << "node [style = invis]  invis" << endl;
+                myfile << "invis -> " << getAllNames(stat) << "[ label = Start ];" << endl;
+            }
+        }
+    }
+    for (auto trans : getDFAtransitions()){
+        string nameF = getAllNames(trans->getFrom());
+        string nameT = getAllNames(trans->getTo());
+        char input = trans->getInput();
+        myfile << nameF << " -> " << nameT << "[label= "<< input << "]"<<endl;
+    }
+
 
     myfile << "}";
 
@@ -65,10 +83,10 @@ string DFA::getAllNames(vector<State*> state) {
         stateNames.push_back(subState->getName());
     }
 
-    string *names;
-    names = new string[stateNames.size()];
+    string names;
+
     for(int i=0; i<stateNames.size(); i++){
-        names[i] = stateNames[i];//Copy the vector to the string
+        names=names + stateNames[i];          //Copy the vector to the string
     }
-    return *names;
+    return names;
 }
