@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories(json external)
 
-set(SOURCE_FILES main.cpp NFA.cpp NFA.h State.cpp State.h json/json-forwards.h json/json.h jsoncpp.cpp NFA_Transition.cpp NFA_Transition.h NFA.json DFA.cpp DFA.h DFA_Transition.cpp DFA_Transition.h)
+set(SOURCE_FILES main.cpp NFA.cpp NFA.h State.cpp State.h json/json-forwards.h json/json.h jsoncpp.cpp NFA_Transition.cpp NFA_Transition.h NFA.json DFA.cpp DFA.h DFA_Transition.cpp DFA_Transition.h dfa.dt)
 add_executable(SSC ${SOURCE_FILES})
