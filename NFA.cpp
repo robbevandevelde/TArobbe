@@ -100,28 +100,25 @@ DFA NFA::SSC() {
 
     bool isInDFA = false;                   //controle bools
     bool isInTrans = false;
-    bool sameInput = false;
-    bool sameFrom = false;
-    bool sameTo = false;
 
     NEW_DFA->addState(garbageState);        //add garbage state aan dfa toe
 
-    for (auto states : NFAstates){
+    for (auto statesIT : NFAstates){
         //gaat over de NFA states tot hij het startpunt heeft gevonden en maakt nieuwe states aan van deze zijn transities
-        if( states->isStart() == true){
+        if( statesIT->isStart() == true){
             vector <State*> firstState;
-            firstState.push_back(states);
+            firstState.push_back(statesIT);
             NEW_DFA->addState(firstState);
             for(auto i : alphabet){
-                NEW_DFA->addState(getTrans(states, i));
-                DFA_Transition* transition = new DFA_Transition(firstState, getTrans(states, i), i);
+                NEW_DFA->addState(getTrans(statesIT, i));
+                DFA_Transition* transition = new DFA_Transition(firstState, getTrans(statesIT, i), i);
                 NEW_DFA->addTransition(transition);
             }
         }
     }
     //nadat je de eerste states hebt toegevoegd kan je de dfa states overlopen
-    for (auto states : NEW_DFA->returnDFAStates()){
-        for ( auto substate : states){  // ga binnenin de states kijken
+    for (auto statesIT2 : NEW_DFA->returnDFAStates()){
+        for ( auto substate : statesIT2){  // ga binnenin de states kijken
             for (auto i : alphabet){
                 vector <State*> newState;
                 vector <State*> transFromSub = getTrans(substate, i);
@@ -146,67 +143,47 @@ DFA NFA::SSC() {
                 }
                 if(isInDFA != true){
                     NEW_DFA->addState(newState);
-                    DFA_Transition* transition = new DFA_Transition(states, newState, i);
+                    DFA_Transition* transition = new DFA_Transition(statesIT2, newState, i);
                     NEW_DFA->addTransition(transition);
                 }
                 else{
-                    DFA_Transition trans = DFA_Transition(states, newState, i);
-                    int sameCounterFrom = 0; //houd bij hoeveel van de from transities hetzelfde zijn
-                    int sameCounterTo = 0; //houd bij hoeveel van de from transities hetzelfde zijn
-                    for( auto transitions : NEW_DFA->getDFAtransitions()){
-                        if(trans.getFrom().size() == transitions->getFrom().size()) {
-                            for (int i; i < transitions->getFrom().size(); i++) {
-                                if (transitions->getFrom()[i] == trans.getFrom()[i]) {
-                                    sameCounterFrom += 1;
+                    if (statesIT2.size()== 1){
+                        for( auto transitions : NEW_DFA->getDFAtransitions()){
+                            if (transitions->getFrom().size() == statesIT2.size()){
+                                int j = 0;
+                                for (j ; j<statesIT2.size();j++){
+                                    if(transitions->getFrom()[j]->getName() == statesIT2[j]->getName()
+                                       && transitions->getInput() == i){
+                                        isInTrans = true;
+
+                                    }
                                 }
                             }
-                            if(sameCounterFrom == trans.getFrom().size()){
-                                sameFrom = true;
-                            }
-                        }
-                        if(trans.getTo().size() == transitions->getTo().size()){
-                            for(int j; j<trans.getTo().size(); j++){
-                                if( trans.getTo()[j] == transitions->getTo()[j]){
-                                    sameCounterTo+=1;
-                                }
-                            }
-                            if( sameCounterTo == trans.getTo().size()){
-                                sameTo = true;
-                            }
-                        }
-                        if (trans.getInput() == transitions->getInput()){
-                            sameInput = true;
                         }
                     }
-                    if( sameFrom and sameInput and sameTo){
-                        isInTrans = true;
+                    if(statesIT2.size()>1){
+                        int ctr = 0;
+                        isInTrans = false;
+                        for( auto transitions : NEW_DFA->getDFAtransitions()) {
+                            if (transitions->getFrom().size() == statesIT2.size()) {
+                                int j = 0;
+                                for (j; j < statesIT2.size(); j++) {
+                                    if (transitions->getFrom()[j]->getName() == statesIT2[j]->getName()
+                                        && transitions->getInput() == i) {
+                                        ctr += 1;
+                                    }
+                                }
+                            }
+                        }
+                        if (ctr == statesIT2.size()){
+                            isInTrans = true;
+                        }
                     }
                 }
                 if(isInTrans != true){
-                    DFA_Transition* transition = new DFA_Transition(states, newState, i);
+                    DFA_Transition* transition = new DFA_Transition(statesIT2, newState, i);
                     NEW_DFA->addTransition(transition);
                 }
-//                if(isInDFA == true){
-//                    DFA_Transition transition = DFA_Transition(states, newState, i);
-//                    int i = 0;
-//                    for (auto trans : NEW_DFA->getDFAtransitions()){
-//                        for( i; i<NEW_DFA->getDFAtransitions().size(); i++){
-//                            for( int y; y<states.size();y++){
-//                                if(trans[i].getFrom() == states[y]{
-//                                    sameFrom = true;
-//                                }
-//                            }
-//
-//                        }
-//                    }
-//// && trans[i].getInput() == transition.getInput()
-////                    && trans[i].getTo() == transition.getTo())
-//                }
-//                if(isInTrans != true){
-//                    DFA_Transition* transition = new DFA_Transition(states, newState, i);
-//                    NEW_DFA->addTransition(transition);
-//                }
-
             }
 
         }

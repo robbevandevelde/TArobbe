@@ -119,6 +119,9 @@
 		<Unit filename="/Users/robbe/Desktop/SSC/State.h">
 			<Option target="SSC"/>
 		</Unit>
+		<Unit filename="/Users/robbe/Desktop/SSC/Test1.json">
+			<Option target="SSC"/>
+		</Unit>
 		<Unit filename="/Users/robbe/Desktop/SSC/dfa.dt">
 			<Option target="SSC"/>
 		</Unit>
